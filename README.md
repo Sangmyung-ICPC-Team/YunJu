@@ -3,6 +3,6 @@
 # 2021 first Semester Goal
 **_1 weeks 10 coding_**
 * 2021.05.13 ~ 2021.05.19
-  baekjoon 9 problems leetcode 1 problem
+    baekjoon 9 problems leetcode 1 problem
 * 2021.05.20 ~ 2021.05.26
-  baekjoon 8 problems leetcode 1 problem
+    baekjoon 8 problems leetcode 1 problem
