@@ -1,4 +1,4 @@
-# YunJu
+# OHYunJu
 상명대학교 소프트웨어학과 20학번
 # 2021 first Semester Goal
 * 2021.05.13 ~ 2021.05.19
