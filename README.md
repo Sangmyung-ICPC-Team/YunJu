@@ -1,4 +1,4 @@
-# YunJu
+# OHYunJu
 상명대학교 소프트웨어학과 20학번
 # 2021 first Semester Goal
 * 2021.05.13 ~ 2021.05.19
@@ -9,4 +9,5 @@
     baekjoon 7 problems
 # 2021 Summer Vacation Goal
 **_1 weeks 10 coding_**
-* 2021.06.21 ~ 2021.06.27
+* 2021.06.21 ~ 2021.06.27 baekjoon 9 problems
+* 2021.06.28 ~ 2021.07.04 baekjoon 7 problems
