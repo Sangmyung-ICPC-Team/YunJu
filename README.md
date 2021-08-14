@@ -1,5 +1,8 @@
 # OHYunJu
 상명대학교 소프트웨어학과 20학번
+
+[![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=bibi0218)](https://solved.ac/bibi0218)
+
 # 2021 first Semester Goal
 * 2021.05.13 ~ 2021.05.19
     baekjoon 9 problems leetcode 1 problem
@@ -16,3 +19,4 @@
 * 2021.07.19 ~ 2021.07.25 baekjoon 10 problems
 * 2021.07.26 ~ 2021.08.01 baekjoon 9 problems
 * 2021.08.02 ~ 2021.08.08 baekjoon 10 problems
+* 2021.08.09 ~ 2021.08.15 baekjoon 
