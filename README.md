@@ -19,4 +19,4 @@
 * 2021.07.19 ~ 2021.07.25 baekjoon 10 problems
 * 2021.07.26 ~ 2021.08.01 baekjoon 9 problems
 * 2021.08.02 ~ 2021.08.08 baekjoon 10 problems
-* 2021.08.09 ~ 2021.08.15 baekjoon 
+* 2021.08.09 ~ 2021.08.15 baekjoon 10 problems
