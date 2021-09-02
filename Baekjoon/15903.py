@@ -14,6 +14,6 @@ for i in range(m):
     y = heapq.heappop(queue)
 
     heapq.heappush(queue, x+y)
-    #heapq.heappush(queue, x+y)
+    heapq.heappush(queue, x+y)
 
 print(sum(queue))
