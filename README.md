@@ -12,6 +12,7 @@ Date | Baekjoon | Programmers
  
 # 2021 Summer Vacation Goal
 **_1 weeks 10 coding_**
+
  Date | Baekjoon 
  -----|----------
  2021.06.21 ~ 2021.06.27  | 9 
