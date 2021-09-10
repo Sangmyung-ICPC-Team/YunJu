@@ -23,4 +23,5 @@
 * 2021.08.16 ~ 2021.08.22 baekjoon 10 problems9.
 * 2021.08.23 ~ 2021.08.29 baekjoon 9 problems
 # 2021 Second Semester Goal
-* 2021.09.
+* 2021.09.01 ~ 2021.09.08 baekjoon 6 problems leetcode 3 problems
+* 2021.09.09 ~ 2021.09.15 
