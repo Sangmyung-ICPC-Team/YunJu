@@ -4,23 +4,30 @@
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=bibi0218)](https://solved.ac/bibi0218)
 
 # 2021 first Semester Goal
-* 2021.05.13 ~ 2021.05.19
-    baekjoon 9 problems leetcode 1 problem
-* 2021.05.20 ~ 2021.05.26
-    baekjoon 8 problems leetcode 1 problem
-* 2021.05.27 ~ 2021.06.02
-    baekjoon 7 problems
+Date | Baekjoon | Programmers
+ -----|----------|----------
+ 2021.05.13 ~ 2021.05.19  | 9 |  1
+ 2021.05.20 ~ 2021.05.26  | 8 |  1
+ 2021.05.27 ~ 2021.06.020  | 7
+ 
 # 2021 Summer Vacation Goal
 **_1 weeks 10 coding_**
-* 2021.06.21 ~ 2021.06.27 baekjoon 9 problems
-* 2021.06.28 ~ 2021.07.04 baekjoon 7 problems
-* 2021.07.05 ~ 2021.07.11 baekjoon 11 problems
-* 2021.07.12 ~ 2021.07.18 baekjoon 5 problems
-* 2021.07.19 ~ 2021.07.25 baekjoon 10 problems
-* 2021.07.26 ~ 2021.08.01 baekjoon 9 problems
-* 2021.08.02 ~ 2021.08.08 baekjoon 10 problems
-* 2021.08.09 ~ 2021.08.15 baekjoon 10 problems
-* 2021.08.16 ~ 2021.08.22 baekjoon 10 problems9.
-* 2021.08.23 ~ 2021.08.29 baekjoon 9 problems
+
+ Date | Baekjoon 
+ -----|----------
+ 2021.06.21 ~ 2021.06.27  | 9 
+ 2021.06.28 ~ 2021.07.04  | 7
+ 2021.07.05 ~ 2021.07.11  | 11
+ 2021.07.12 ~ 2021.07.18  | 5
+ 2021.07.19 ~ 2021.07.25  | 10
+ 2021.07.26 ~ 2021.08.01  | 9
+ 2021.08.02 ~ 2021.08.08  | 10
+ 2021.08.09 ~ 2021.08.15  | 10
+ 2021.08.16 ~ 2021.08.22  | 10
+ 2021.08.23 ~ 2021.08.29  | 9
+
 # 2021 Second Semester Goal
-* 2021.09.
+ Date | Baekjoon | Leetcode
+ -----|----------|----------
+ 2021.09.01 ~ 2021.09.08  | 6 | 4
+ 2021.09.09 ~ 2021.09.15  | 5 | 3
