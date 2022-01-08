@@ -45,4 +45,5 @@ Date | Baekjoon | Programmers
  # 2022 Winter Vacation Goal
  Date | Baekjoon 
  -----|----------
- 2021.12.30 ~ 2022.01.05  | 
+ 2021.12.30 ~ 2022.01.05  | 3
+ 2022.01.06 ~ 2022.01.12  |
