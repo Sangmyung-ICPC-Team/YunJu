@@ -5,9 +5,8 @@ qlist = []
 classroom = []
 
 for i in range(N):
-    s, t = map(int, input().split())
+    num, s, t = map(int, input().split())
     qlist.append([s, t])
-
 qlist.sort()
 heapq.heappush(classroom, qlist[0][1])
 
