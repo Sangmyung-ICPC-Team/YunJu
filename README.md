@@ -1,18 +1,16 @@
 # OHYunJu
-상명대학교 소프트웨어학과 20학번
+상명대학교 소프트웨어학과
 
 [![Solved.ac프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=bibi0218)](https://solved.ac/bibi0218)
 
-# 2021 first Semester Goal
+# 2021 first Semester
 Date | Baekjoon | Programmers
  -----|----------|----------
  2021.05.13 ~ 2021.05.19  | 9 |  1
  2021.05.20 ~ 2021.05.26  | 8 |  1
  2021.05.27 ~ 2021.06.20  | 7
  
-# 2021 Summer Vacation Goal
-**_1 weeks 10 coding_**
-
+# 2021 Summer Vacation
  Date | Baekjoon 
  -----|----------
  2021.06.21 ~ 2021.06.27  | 9 
@@ -26,7 +24,7 @@ Date | Baekjoon | Programmers
  2021.08.16 ~ 2021.08.22  | 10
  2021.08.23 ~ 2021.08.29  | 9
 
-# 2021 Second Semester Goal
+# 2021 Second Semester
  Date | Baekjoon | Leetcode
  -----|----------|----------
  2021.09.01 ~ 2021.09.08  | 6 | 4
@@ -42,10 +40,10 @@ Date | Baekjoon | Programmers
  2021.11.19 ~ 2021.11.25  | 6 | 2
  2021.11.26 ~ 2021.12.02  | 3 | 2
  
- # 2022 Winter Vacation Goal
- Date | Baekjoon 
- -----|----------
+ # 2022 Winter Vacation
+ Date | Baekjoon | Leetcode
+ -----|----------|----------
  2021.12.30 ~ 2022.01.05  | 3
  2022.01.06 ~ 2022.01.12  | 3
- 2022.01.13 ~ 2022.01.19  | 2
- 2022.01.20 ~ 2022.01.26  | 
+ 2022.01.13 ~ 2022.01.19  |   | 2
+ 2022.01.20 ~ 2022.01.26  | 2 | 1
