@@ -1,30 +1,29 @@
 from collections import deque
+
 n, m, k, x = map(int, input().split())
-graph = [[] for i in range(n+1)]
+graph = [[] for _ in range(n+1)]
+check = [-1] * (n+1)
 
-dis = [2] * (n+1)
-dis[x] = 0
-check = False
+def bfs(node):
+    q = deque()
+    q.append(node)
+    check[node] = 0
+    while q:
+        node = q.popleft()
+        for n in graph[node]:
+            if check[n] == -1:
+                check[n] = check[node] + 1
+                q.append(n)
 
-for i in range(m):
+for _ in range(m):
     a, b = map(int, input().split())
-
     graph[a].append(b)
 
-queue = deque()
-queue.append(x)
+bfs(x)
 
-while(queue):
-    city = queue.pop()
-    for next in graph[city]:
-        if dis[next] == 2:
-            dis[next] = dis[city] + 1
-            queue.append(next)
-
-for i in range(1, n+1):
-    if dis[i] == k:
-        print(i)
-        check = True
-if check == False:
+if k not in check:
     print(-1)
- 
+else:
+    for i in range(n+1):
+        if check[i] == k:
+            print(i)
