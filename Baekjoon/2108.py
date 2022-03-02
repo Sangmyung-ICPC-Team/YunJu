@@ -1,39 +1,35 @@
 import sys 
 
 n = int(input()) 
-arr = [] 
-diction = {} 
+li = [] 
+dic = {} 
 
-for _ in range(n): 
+for i in range(n): 
     i = int(sys.stdin.readline()) 
-    arr.append(i) 
-    if i in diction: # 최빈값 계산을 위해 딕셔너리에 담기 
-        diction[i] += 1 
-    else: diction[i] = 1
+    li.append(i)
 
-print(round(sum(arr)/n)) 
+    if i in dic:
+        dic[i] += 1 
+    else:
+        dic[i] = 1
 
-arr.sort() 
-i = int(len(arr)//2) 
-print(arr[i]) 
+print(round(sum(li)/n)) 
 
-maxNum = 0 
-arr2 = [] 
+li.sort() 
+i = int(len(li)//2) 
+print(li[i])
 
-for key, val in diction.items(): 
-    if val > maxNum: 
-        arr2.clear() 
-        arr2.append(key) 
-        maxNum = val 
-    elif val == maxNum: 
-        arr2.append(key) 
-        maxNum = val 
-arr2.sort() 
-#print(arr2[0]) 
 
-if len(arr2) == 1:
-    print(arr2[0])
-else:
-    print(arr2[1])  
+from collections import Counter
 
-print(arr[len(arr)-1] - arr[0])
+k = Counter(li).most_common()
+
+if len(li) > 1:
+    if k[0][1] == k[1][1]:
+        print(k[1][0]) 
+    else: 
+        print(k[0][0]) 
+else: 
+    print(li[0])   
+
+print(li[len(li)-1] - li[0])
