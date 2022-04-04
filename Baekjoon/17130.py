@@ -1,31 +1,35 @@
-import sys
-from collections import deque
-input=sys.stdin.readline
+N, M = map(int, input().split())
 
-n, m=map(int, input().split())
-board=[]
-for _ in range(n):
-    board.append(list(input().rstrip()))
-for y in range(n):
-    for x in range(m):
-        if board[y][x]=='R':
-            rabit=(y, x, 0)
+arr = [input() for _ in range(N)]
 
-q=deque([rabit])
-visited={}
-can=False
-move=[[1,0],[1,1],[1,-1]]
-ans=0
-while q:
-    node=q.popleft()
-    if node not in visited:
-        visited[node]=True
-        nx=node[1]; ny=node[0]; nc=node[2]
-        ans=max(ans, nc)
-        if board[ny][nx]=='O': can=True
-        elif board[ny][nx]=='C': nc+=1
-        for v in move:
-            mx=nx+v[0]; my=ny+v[1]
-            if 0<=mx<m and 0<=my<n and board[my][mx]!='#':
-                q.append((my, mx, nc))
-print(ans if can else -1)
+visit = [[-1 for _ in range(M)] for _ in range(N)]
+queue = []
+
+for i in range(N):
+    for j in range(M):
+        if arr[i][j] == 'R':
+            queue.append([i, j, 0])
+            break
+    if len(queue):
+        break
+
+move = [(1, 1), (0, 1), (-1, 1)]
+result = -1
+
+while queue:
+    n_queue = []
+    for i, j, cnt in queue:
+        for m in move:
+            ni, nj = i + m[0], j + m[1]
+            if 0 <= ni < N and 0 <= nj < M and cnt > visit[ni][nj] and arr[ni][nj] != '#':
+                if arr[ni][nj] == 'O':
+                    result = max(result, cnt)
+                    n_queue.append([ni, nj, cnt])
+                elif arr[ni][nj] == 'C':
+                    n_queue.append([ni, nj, cnt + 1])
+                else:
+                    n_queue.append([ni, nj, cnt])
+                visit[ni][nj] = cnt
+    queue = n_queue
+    
+print(result)
