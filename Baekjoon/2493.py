@@ -10,8 +10,8 @@ ans = []
 
 for i in range(n):
     while stack:
-        if stack[-1][1] >= tap[i]: 
-            ans.append(stack[-1][0] + 1)
+        if stack[1] >= tap[i]: 
+            ans.append(stack[0] + 1)
             break
         
         else: stack.pop()
