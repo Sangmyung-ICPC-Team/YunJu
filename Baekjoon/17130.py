@@ -1,35 +1,56 @@
-N, M = map(int, input().split())
+import sys
 
-arr = [input() for _ in range(N)]
+input = sys.stdin.readline
+MIISS = lambda: map(int, input().strip().split())
+directions = [(0, -1), (1, -1), (-1, -1)]
 
-visit = [[-1 for _ in range(M)] for _ in range(N)]
-queue = []
+N, M = MIISS()
+arr = list(input().strip() for _ in range(N))
+dp = [[0] * M for _ in range(N)]
+visited = [[False] * M for _ in range(N)]
 
-for i in range(N):
-    for j in range(M):
-        if arr[i][j] == 'R':
-            queue.append([i, j, 0])
-            break
-    if len(queue):
-        break
+def find_a_rabbit_start():
+    for i in range(N):
+        for j in range(M):
+            if arr[i][j] == 'R':
+                return (i, j)
 
-move = [(1, 1), (0, 1), (-1, 1)]
-result = -1
 
-while queue:
-    n_queue = []
-    for i, j, cnt in queue:
-        for m in move:
-            ni, nj = i + m[0], j + m[1]
-            if 0 <= ni < N and 0 <= nj < M and cnt > visit[ni][nj] and arr[ni][nj] != '#':
-                if arr[ni][nj] == 'O':
-                    result = max(result, cnt)
-                    n_queue.append([ni, nj, cnt])
-                elif arr[ni][nj] == 'C':
-                    n_queue.append([ni, nj, cnt + 1])
-                else:
-                    n_queue.append([ni, nj, cnt])
-                visit[ni][nj] = cnt
-    queue = n_queue
-    
-print(result)
+ri, rj = find_a_rabbit_start()
+side_doors = []
+visited[ri][rj] = True
+
+for j in range(rj + 1, M): 
+    for i in range(N):
+        if arr[i][j] == '#':
+            continue  
+
+        most_carrot_spot = 0
+        flag = False 
+        for ki, kj in directions:
+            ni, nj = i + ki, j + kj
+            if 0 <= ni < N and 0 <= nj < M and visited[ni][nj]: 
+                most_carrot_spot = max(most_carrot_spot, dp[ni][nj])
+                flag = True
+
+        if flag == False: 
+            continue
+
+        visited[i][j] = True 
+
+        if arr[i][j] == 'C':
+            dp[i][j] = most_carrot_spot + 1
+
+        elif arr[i][j] == '.':
+            dp[i][j] = most_carrot_spot
+
+        elif arr[i][j] == 'O':
+            if most_carrot_spot == -1:  
+                continue
+            dp[i][j] = most_carrot_spot
+            side_doors.append(most_carrot_spot)
+
+if side_doors:
+    print(max(side_doors))
+else:  
+    print(-1)
